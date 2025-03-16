@@ -18,6 +18,10 @@ namespace mc {
             code::Func<void, 0x02DA7918, ConsoleUIController*, struct SoundEvent*>()(this, sound);
         }
 
+        void ShowPressStart(int unk) {
+			code::Func<void, 0x02DA9670, ConsoleUIController*, int*>()(this, &unk);
+		}
+
         void TouchBoxRebuild(UIScene* scene) {
             code::Func<void, 0x02d9e69c, ConsoleUIController*, UIScene*>()(this, scene);
         }
