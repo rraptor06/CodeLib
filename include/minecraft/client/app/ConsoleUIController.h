@@ -19,8 +19,12 @@ namespace mc {
         }
 
         void ShowPressStart(int unk) {
-			code::Func<void, 0x02DA9670, ConsoleUIController*, int*>()(this, &unk);
-		}
+	    code::Func<void, 0x02DA9670, ConsoleUIController*, int*>()(this, &unk);
+	}
+
+	void PressStartPlaying(int unk) {
+	    code::Func<void, 0x02DA9360, ConsoleUIController*, int*>()(this, &unk);
+	}
 
         void TouchBoxRebuild(UIScene* scene) {
             code::Func<void, 0x02d9e69c, ConsoleUIController*, UIScene*>()(this, scene);
