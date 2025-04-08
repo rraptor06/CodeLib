@@ -10,12 +10,14 @@
 namespace mc {
     class UILayer {
     public:
-	
-	
-		void updateFocusState(bool flag)
-		{
-			code::Func<void, 0x02E7F95C, UILayer*, bool>()(this, flag); 
-		}
+	bool HasFocus(int arg1) {
+        	return ((bool(*)(UILayer*,int))0x02E85930)(this, arg1);
+    	}
+
+	void updateFocusState(bool flag)
+	{
+		code::Func<void, 0x02E7F95C, UILayer*, bool>()(this, flag); 
+	}
 		
         mstd::vector<struct UIScene*> scenes;
         mstd::vector<struct UIScene*> components;
