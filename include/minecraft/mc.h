@@ -21,8 +21,10 @@
 #include "client/resource/texture/Textures.h"
 #include "client/resource/texture/TextureAtlas.h"
 
+#include "client/resource/L10N.h"
 #include "client/resource/NonNullList.h"
 #include "client/resource/ResourceLocation.h"
+#include "client/resource/StringTable.h"
 #include "client/resource/shared_ptr.h"
 #include "client/resource/vector.h"
 #include "client/resource/wstring.h"
