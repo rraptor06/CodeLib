@@ -1,6 +1,7 @@
 #pragma once
 
 #include "block/Block.h"
+#include "block/material/StructureBlock.h"
 
 #include "blockentity/BlockEntity.h"
 #include "blockentity/SignBlockEntity.h"
